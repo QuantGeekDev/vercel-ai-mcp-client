@@ -36,6 +36,7 @@ export default class McpClient {
     const tools = await this.client.listTools()
     return tools
   }
+
   public async callTool({name, args}: {name: any, args: any}){
     const result = await this.client.callTool({
       name,
@@ -43,6 +44,7 @@ export default class McpClient {
     })
     return result
   }
+  
 }
 
 
